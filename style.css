@@ -5,18 +5,28 @@ body{
 
 /* *********the header*********************/
 .header{
-    background-image: url(images/sbd.png);
+    background-image: url(images/header-image.png);
+    background-position: right;
+    background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
-    height: 200px;
+    height: 100vh;
+}
+
+.header-wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-wrapper{
+    padding-top: 20px;
     display: flex;
-    align-items: center;
-    align-content: flex-end;
+    justify-content:space-between ;
 }
 
 .logo{
     transition: all ease-in-out 2s;
-    margin-top: 80px;
+    width: 200px;
 }
 
 .logo:hover{
@@ -26,36 +36,28 @@ body{
 .nav{
     display: flex;
     flex-direction: row;
-    margin-top: 160px;
+    gap:20px ;
+    align-items: center;
+    margin-right: 150px;
 }
 
 .nav-items{
     color: #fff;
     text-decoration: none;
     font-size: 20px;
-    font-weight: 400;
-    margin-right: 100px;
+    font-weight: bold;
     transition: 0.5s;
 }
 
 .nav-items:hover{
     color: #E1110E;
-    text-decoration: none;
-    font-size: 40px;
-    font-weight: 400;
-    margin-right: 100px;
 }
 
 .sign-up{
     color: #fff;
     text-decoration: none;
     font-size: 20px;
-    font-weight: 400;
-    margin-right: 100px;
-    margin-top: 160px;
-    padding: 10px 15px;
-    border: 2px solid #E1110E;
-    border-radius: 15px;
+    font-weight: bold;
     transition: background-color 0.3s, border-color 0.3s;
 }
 
@@ -63,8 +65,39 @@ body{
     background-color: #E1110E;
 }
 
-/* ---------------THE MAIN SECTION------------------ */
+.header-text{
+    margin-top: 60px;
+}
 
+.header-text h1{
+    margin-top: 100px;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.header-text a{
+    margin-top: 20px;
+    color:#fff;
+    background-color: #E1110E;
+    border: 2px solid #E1110E;
+}
+
+.right-text{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 0px 40px;
+    width: 500px;
+    height: 600px;
+}
+
+/* ---------------THE MAIN SECTION------------------ */
+.main-wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
 .main{
     display: flex;
     flex-direction: column; /* Change to column to stack elements vertically */
@@ -74,7 +107,6 @@ body{
 
 .main-apps{
     width: 1000px;
-    height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -85,13 +117,12 @@ body{
 
 .main-boxes{
     background-color: #fff;
-    width: 500px;
+    width: 600px;
     height: 100px;
     display: flex; /* Added to use Flexbox layout */
     justify-content: center;
     align-items: center; /* Added to center content vertically */
     margin-left: 100px;
-    border-radius: 20px;
     color: #fff;
     transition: 0.5s;
 }
@@ -100,6 +131,10 @@ body{
     width: 700px;
     height: 150px;
     border: 2px solid #E1110E;
+}
+
+.main-boxes a{
+    font-weight: bold;
 }
 
 .box1{
@@ -131,4 +166,17 @@ body{
 .shops{
     width: 300px;
     height: 700px;
+}
+
+.access h1{
+color: #fff;
+font-weight: bold;
+}
+
+.find-gym{
+    background-color: #E1110E;
+    }
+
+.buy-gear{
+    background-color: ;
 }
