@@ -1,0 +1,113 @@
+*, *::before, *::after {
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1F1F1F;
+    height: 100vh; /* Ensure main takes full viewport height */
+}
+
+
+.rpe-grid {
+    max-width: 500px;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 5px;
+}
+
+.output {
+    display: grid;
+    background-color:  #1F1F1F;
+    grid-template-columns: 1fr; /* Define one column */
+    grid-template-rows: repeat(3, 1fr); /* Define three rows */
+    grid-column: span 3; /* Span across all columns of the parent grid */
+    grid-row: span 3; /* Span across the first three rows of the parent grid */
+    gap: 5px;
+    height: 200px;
+}
+
+.rep-max {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: aqua;
+}
+
+.rep-max-name{
+    align-self: center;
+    text-align: center;
+    color: #fff;
+}
+.rep-max-display{
+    align-items: center;
+}
+#value1{
+    background-color:  #1F1F1F;
+    width: 100%; /* Make input take full width */
+    height: 100%; /* Make input take full height */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    border: none; /* Remove default border */
+    margin: 0; /* Remove default margin */
+    padding: 10px; /* Add padding if needed */
+    color: #fff;
+}
+.weight{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+
+#weight-op{
+    background-color: #D13E3E;
+    align-items: center;
+    padding-left: 35px;
+    width: 100%; /* Make select take full width */
+    height: 100%; /* Make select take full height */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    border: none; /* Remove default border */
+    margin: 0; /* Remove default margin */
+    color: #fff;
+
+}
+
+.reps{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: #D13E3E;
+}
+
+.reps-name{
+    background-color:#D13E3E;
+    align-self: center;
+    text-align: center;
+    color: #fff;
+}
+
+
+.rpe-grid > div {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #777;
+    cursor: pointer;
+}
+
+.span{
+    grid-column: span 2;
+}
+
+.rep-max {
+    background-color: brown;
+}
+.rpe-grid >div{
+    color: #fff;
+}
+
+.calc{
+    background-color: #D13E3E;
+}
