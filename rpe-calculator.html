@@ -12,56 +12,60 @@
     <div class="header">
         <div class="header-wrapper">
             <div class="nav-wrapper">
-                <img class="logo" src="images/logo1.png" alt="">
+                <img class="logo" src="images/logo1.png"  alt="">
                 <ul class="nav">
-                <li><a href="" class="nav-items">Home</a></li>
-                <li><a href="" class="nav-items">Tools</a></li>
-                <li><a href="" class="nav-items">Location</a></li>
-                <li><a href="" class="nav-items">Contact</a></li>
-                <a href="" class="sign-up">Sign Up</a>
+                    <li><a href="index.html" class="nav-items">Home</a></li>
+                    <li><a href="" class="nav-items">Tools</a></li>
+                    <li><a href="" class="nav-items">Location</a></li>
+                    <li><a href="" class="nav-items">Contact</a></li>
+                    <a href="" class="sign-up">Sign Up</a>
                 </ul>
             </div>
-            </div>
+        </div>
     </div>
 
     <main id="rpe-main">
-
+        <div class="header-boxes">
+            <div class="rpe-box1">
+            </div>
+            <div class="rpe-box2"></div>
+        </div>
+        <h1 class="header-text">1 REP MAX CALCULATOR</h1>
         <div class="rpe-grid">
             <form class="output">
                 <div class="rep-max">
-                    <div class="rep-max-name">REP MAX</div>
-                    <div class="rep-max-display"></div>
+                    <div class="rep-max-name">1 REP MAX</div>
+                    <div class="rep-max-display" id="repMaxDisplay"></div>
                 </div>
                 <div class="weight">
-                    <div class="weight-display"><input type="text" id="value1"></div>
+                    <div class="weight-display"><input type="text" id="value1" placeholder="Please enter the weight"></div>
                     <select id="weight-op">
-                        <option value="kg">kg</option>
-                        <option value="lbs">lbs</option>
+                        <option value="kg">(weight) kg</option>
+                        <option value="lbs">(weight) lbs</option>
                     </select>
                 </div>
                 <div class="reps">
                     <div class="reps-name">REPS</div>
-                    <div class="reps-display"><input type="text" id="value1"></div>
+                    <div class="reps-display"><input type="text" id="value2" placeholder="Enter the number of reps"></div>
                 </div>
             </form>
 
-            <div class="span">AC</div>
-            <div>CLEAR</div>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
-            <div>7</div>
-            <div>8</div>
-            <div>9</div>
-            <div>0</div>
-            <div>.</div>
+            <div class="span-button" id="acButton">AC</div>
+            <div class="button-clear">CLEAR</div>
+            <div class="button">1</div>
+            <div class="button">2</div>
+            <div class="button">3</div>
+            <div class="button">4</div>
+            <div class="button">5</div>
+            <div class="button">6</div>
+            <div class="button">7</div>
+            <div class="button">8</div>
+            <div class="button">9</div>
+            <div class="button">0</div>
+            <div class="button">.</div>
             <div class="calc">CALC</div>
-
-
-
         </div>
-
     </main>
+    <script src="javascript files/repmax.js"></script>
+</body>
+</html>

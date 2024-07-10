@@ -1,15 +1,138 @@
 *, *::before, *::after {
     font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: #1F1F1F;
 }
 
+.header{
+    background-position: right;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+
+}
+s
+.header-wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-wrapper{
+    padding-top: 20px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.logo{
+    transition: all ease-in-out 2s;
+    width: 200px;
+}
+
+.logo:hover{
+    background-image: url(images/logo1.png);
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    gap:20px ;
+    align-items: center;
+    margin-right: 150px;
+}
+
+.nav-items{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.nav-items:hover{
+    color: #E1110E;
+}
+
+.sign-up{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: background-color 0.2s, border-color 0.3s;
+    background-color: #E1110E;
+    border: 2px solid #E1110E;
+    border-radius: 20px;
+    padding: 15px 15px;
+}
+
+.sign-up:hover{
+    background-color: #E1110E;
+    border: 2px solid #E1110E;
+    border-radius: 20px;
+    padding: 15px 15px;
+}
+
+.header-text{
+    margin-top: 60px;
+}
+
+.header-text h1{
+    margin-top: 100px;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.header-text a{
+    margin-top: 20px;
+    color:#fff;
+    background-color: #E1110E;
+    border: 2px solid #E1110E;
+}
+
+.right-text{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 0px 40px;
+    width: 500px;
+    height: 600px;
+}
+
+
 main {
+    display: flex;
+    flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #1F1F1F;
     height: 100vh; /* Ensure main takes full viewport height */
 }
+.header-boxes{
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+}
 
+.rpe-box1{
+    height: 200px;
+    width: 300px;
+    background-color: #E1110E;
+}
+.rpe-box2{
+    height: 200px;
+    width: 300px;
+    background-color: #E1110E;
+}
+.header-text{
+    color: #fff;
+    padding-bottom: 30px;
+}
 
 .rpe-grid {
     max-width: 500px;
@@ -32,11 +155,11 @@ main {
     gap: 5px;
     height: 200px;
 }
-
+/* --------1repmax box---------- */
 .rep-max {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    background-color: aqua;
+    background-color:  #E1110E;
 }
 
 .rep-max-name{
@@ -46,7 +169,15 @@ main {
 }
 .rep-max-display{
     align-items: center;
+    color: #fff;
+    background-color: #1F1F1F;
+    padding: 20px;
 }
+.reps input::placeholder{
+    opacity: 0.5;
+
+}
+
 #value1{
     background-color:  #1F1F1F;
     width: 100%; /* Make input take full width */
@@ -57,38 +188,63 @@ main {
     padding: 10px; /* Add padding if needed */
     color: #fff;
 }
+
+/* -----------weightbox------------------- */
 .weight{
     display: grid;
     grid-template-columns: 2fr 1fr;
     align-items: center;
 }
-
+.weight-display{
+    background-color: #1F1F1F;
+    height: 100%;
+}
 #weight-op{
-    background-color: #D13E3E;
+    background-color: #E1110E;
     align-items: center;
-    padding-left: 35px;
     width: 100%; /* Make select take full width */
     height: 100%; /* Make select take full height */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
     border: none; /* Remove default border */
     margin: 0; /* Remove default margin */
     color: #fff;
+    border-radius: 20px;
+}
+
+.weight input::placeholder{
+    opacity: 0.5;
 
 }
+
+/* ------repsbox--------- */
 
 .reps{
     display: grid;
     grid-template-columns: 1fr 2fr;
-    background-color: #D13E3E;
+    background-color:  #E1110E;
 }
 
 .reps-name{
-    background-color:#D13E3E;
     align-self: center;
     text-align: center;
     color: #fff;
 }
 
+.reps-display{
+    align-items: center;
+    color: #fff;
+    background-color: #1F1F1F;
+}
+
+#value2{
+    background-color: #1F1F1F;
+    align-items: center;
+    width: 100%; /* Make select take full width */
+    height: 100%; /* Make select take full height */
+    border: none; /* Remove default border */
+    color: #fff;
+    padding: 10px;
+}
 
 .rpe-grid > div {
     text-align: center;
@@ -97,17 +253,37 @@ main {
     cursor: pointer;
 }
 
-.span{
+#button:hover{
+    background-color: #E1110E;
+}
+
+.rpe-grid  {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #777;
+    cursor: pointer;
+}
+
+.span-button{
     grid-column: span 2;
 }
 
-.rep-max {
-    background-color: brown;
+.button-clear:hover{
+    background-color: #E1110E;
+}
+
+
+.span:hover{
+    background-color:  #E1110E;
 }
 .rpe-grid >div{
     color: #fff;
 }
 
 .calc{
-    background-color: #D13E3E;
+    background-color: #E1110E;
+}
+
+.calc:hover{
+    background-color: #1F1F1F;
 }
