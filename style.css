@@ -225,7 +225,6 @@ align-items: center;
 .left-top-main{
 display: flex;
 flex-direction: column;
-flex
 }
 
 .left-top-main-toptext{
@@ -285,7 +284,6 @@ opacity: 0.5;
     background-image: url(images/app2.jpg);
     background-size: cover;
     text-align: center;
-    justify-content: ;
     background-position: center;
     opacity: 0.5;
 }
@@ -470,3 +468,132 @@ opacity: 50%;
 }
 
 
+/* Media Query for Tablets (768px and below) */
+@media (max-width: 768px) {
+    /* General Layout Adjustments */
+    .header-wrapper, .main-wrapper {
+        max-width: 100%;
+        padding: 0 20px; /* Add padding for better spacing on small screens */
+    }
+
+    /* Navigation Bar */
+    .nav {
+        display: none; /* Hide the navigation by default */
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center;
+        gap: 10px;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .nav.active {
+        display: flex; /* Show navigation when burger menu is active */
+    }
+
+    .burger-menu {
+        display: flex; /* Display burger menu */
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    .burger-menu span {
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+    }
+
+    .sign-up {
+        margin-top: 10px;
+        width: 80%;
+        text-align: center;
+    }
+
+    /* Typography */
+    .largest-text {
+        font-size: 25px; /* Adjust font size for smaller screens */
+    }
+
+    .nav-items {
+        font-size: 14px; /* Shrink navigation text */
+    }
+
+    /* Images and Boxes */
+    .right-top-main-image, .gym-photo2, .find-gym-content {
+        width: 100%; /* Full width for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .main-boxes {
+        width: 90%; /* Adjust box width for smaller screens */
+        height: auto; /* Let height adjust naturally */
+    }
+
+    .content {
+        width: 90%; /* Adjust content box size */
+    }
+
+    /* Flexbox Adjustments */
+    .top-main {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center;
+    }
+
+    .gym-boxes {
+        flex-direction: column; /* Stack gym sections */
+        gap: 20px; /* Add spacing between boxes */
+    }
+
+    .find-gym, .buy-gear {
+        flex-direction: column; /* Stack sections */
+    }
+
+    /* Footer */
+    .footer {
+        flex-direction: column; /* Stack footer items */
+        gap: 10px;
+        padding: 20px; /* Adjust padding for mobile */
+    }
+
+    .f-texts {
+        text-align: center; /* Center-align footer text */
+    }
+}
+
+/* Media Query for Phones (480px and below) */
+@media (max-width: 480px) {
+    /* Navigation */
+    .nav-items, .sign-up {
+        font-size: 12px; /* Further reduce font size for phones */
+    }
+
+    /* Typography */
+    .largest-text {
+        font-size: 20px; /* Further reduce heading size */
+    }
+
+    .right-top-toptext h1 {
+        font-size: 18px; /* Smaller heading */
+    }
+
+    .left-bottom p {
+        font-size: 13px; /* Smaller paragraph text */
+    }
+
+    /* Boxes and Images */
+    .main-boxes {
+        width: 100%; /* Full width for very small screens */
+        height: auto;
+    }
+
+    .content {
+        width: 100%; /* Full width for content boxes */
+    }
+}
