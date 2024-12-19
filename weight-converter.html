@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>balek.sbd</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/rpecalculator.css">
 </head>
 <body>
     <div class="header">
@@ -19,3 +19,48 @@
         </ul>
         <a href="" class="sign-up">Sign Up</a>
     </div>
+    <main id="rpe-main">
+        <div class="header-boxes">
+            <div class="rpe-box1">
+            </div>
+            <div class="rpe-box2"></div>
+        </div>
+        <h1 class="header-text">1 REP MAX CALCULATOR</h1>
+        <div class="rpe-grid">
+            <form class="output">
+                <div class="rep-max">
+                    <div class="rep-max-name">1 REP MAX</div>
+                    <div class="rep-max-display" id="repMaxDisplay"></div>
+                </div>
+                <div class="weight">
+                    <div class="weight-display"><input type="text" id="value1" placeholder="Please enter the weight"></div>
+                    <select id="weight-op">
+                        <option value="kg">(weight) kg</option>
+                        <option value="lbs">(weight) lbs</option>
+                    </select>
+                </div>
+                <div class="reps">
+                    <div class="reps-name">REPS</div>
+                    <div class="reps-display"><input type="text" id="value2" placeholder="Enter the number of reps"></div>
+                </div>
+            </form>
+
+            <div class="span-button" id="acButton">AC</div>
+            <div class="button-clear">CLEAR</div>
+            <div class="button">1</div>
+            <div class="button">2</div>
+            <div class="button">3</div>
+            <div class="button">4</div>
+            <div class="button">5</div>
+            <div class="button">6</div>
+            <div class="button">7</div>
+            <div class="button">8</div>
+            <div class="button">9</div>
+            <div class="button">0</div>
+            <div class="button">.</div>
+            <div class="calc">CALC</div>
+        </div>
+    </main>
+    <script src="javascript files/repmax.js"></script>
+</body>
+</html>
